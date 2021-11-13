@@ -7,7 +7,7 @@
 }
 
 *{
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: Noto Sans TC, sans-serif;
   margin:0; padding:0;
   box-sizing: border-box;
   text-transform: capitalize;
@@ -31,10 +31,6 @@ html{
 .container{
   width:1120px;
   margin: 0 auto;
-}
-
-section{
-  padding:2rem 9%;
 }
 
 li{

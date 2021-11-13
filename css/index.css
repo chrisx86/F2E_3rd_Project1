@@ -15,6 +15,7 @@
 }
 .menus ul li a:hover{
   color:var(--lightblue);
+  cursor:pointer;
 }
 /* banner */
 .bannerContainer{
@@ -24,6 +25,7 @@
   width:100%;
   height:381px;
   background-image: url('../images/index/banner.png');
+  background-size: cover;
 }
 .bannerContainer .bannerItems{
   display: flex;
@@ -67,4 +69,538 @@
 }
 .bannerContainer .tags ul li:hover{
   background: rgba(255, 255, 255, 0.8);
+  cursor:pointer;
+}
+/* alert */
+.alert{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  margin-bottom: 50px;
+}
+.alert .message{
+  width:1120px;
+  height:84px;
+  border-radius:4px;
+  background: #FFF3CD;
+  border-radius: 4px;
+  padding:16px 24px;
+  color: #664D03;
+}
+.alert .message h4{
+  line-height: 28.96px;
+  font-size: 20px;
+  font-weight: normal;
+}
+.alert .message p{
+  line-height: 20.27px;
+  font-size: 14px;
+}
+.alert .message strong{
+  text-decoration: underline;
+}
+/* Views */
+.popularView h2{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: #3A3A3A;
+}
+.popularView .views{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.popularView .views .view{
+  width:359px;
+  height: 333px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 4px;
+  margin-top: 24px;
+}
+.popularView .views .view h3{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: #000000;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 15px 0px 12px 16px;
+}
+.popularView .views .view p{
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin: 0px 0px 24px 16px;
+}
+.popularView .views .view .address{
+  display: flex;
+  align-items: center;
+}
+.popularView .views .view i{
+  width:10.97px;
+  height:14px;
+  color: var(--lightblue);
+  margin: 0px 0px 16px 16px;
+}
+.popularView .views .view span{
+  color: var(--lightblue);
+  margin: 0px 0px 16px 10.07px;
+  font-family: Noto Sans TC;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+}
+/* showmore */
+.showmore{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 74px;
+  margin-bottom: 64px;
+  color: var(--lightblue);
+}
+.showmore::before{
+  content: '';
+  position: absolute;
+  top: 18px;
+  border-bottom: 0.5px solid #C4C4C4;
+  width: 1120px;
+  margin:0 auto；
+}
+.showmore .searchBtn{
+  position: relative;
+  background-color: #fff;
+  border: 1px solid var(--lightblue);
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 8px 86px;
+  font-size: 16px;
+  z-index: 10;
+}
+.showmore .searchBtn:hover{
+  background-color: var(--lightblue);
+  color: #fff;
+  cursor:pointer;
+}
+.showmore .searchBtn i{
+  position: absolute;
+  left: calc(50% - 44%);
+  top: 11px;
+  z-index: 11;
+}
+
+/* citys */
+.popularCity{
+  margin-bottom:113px;
+}
+.popularCity h2{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: #3A3A3A;
+  margin-bottom: 13px;
+}
+.citys{
+  display: flex;
+  justify-content: space-between;
+}
+.citys .city{
+  position: relative;
+}
+.citys .city>h3{
+  position: absolute;
+  bottom: 20px;
+  left: 22px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+}
+.citys .city .info{
+  position: absolute;
+  width: 362px;
+  height: 122px;
+  left: 0px;
+  top: 160px;
+}
+.citys .city .info{
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.32);
+}
+.citys .city .info h3{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  padding: 0 22px;
+}
+.citys .city .info p{
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  padding: 0 22px;
+}
+/* popularActivity */
+.popularActivity{
+  position: relative;
+}
+.popularActivity .activities{
+  overflow: hidden;
+}
+.popularActivity .activities .slideBtn{
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  padding-left: 15px;
+  padding-top: 11px;
+  z-index: 10;
+  top:52.2%;
+  border-radius: 100%;
+  border: 1px solid #C4C4C4;
+  background-color: #fff;
+  overflow: auto;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.popularActivity .activities .slideBtn:hover{
+  transform: translateY(-2px);
+  color: var(--lightblue);
+  background-color: #eee;
+  cursor: pointer;
+}
+.popularActivity .activities .slideLeft{
+  left: -20px;
+}
+.popularActivity .activities .slideRight{
+  right: -20px;
+}
+.popularActivity h2{
+  margin-bottom: 24px;
+}
+.popularActivity .activities{
+  display: flex;
+}
+.popularActivity .activities .activity{
+  width: 317px;
+  background: #FFFFFF;
+  border: 0.5px solid #C4C4C4;
+  margin-right: 20px;
+  box-shadow: 0px 4px 14px #D7D8D9;
+  border-radius: 4px;
+}
+.popularActivity .activities .activity img{
+  height: 167px;
+  margin-bottom: 18px;
+  object-fit: cover;
+  object-position: left top;
+}
+.popularActivity .activities .activity h4{
+  width:317px;
+  font-size: 20px;
+  margin-left: 16px;
+  margin-bottom: 12px;
+  line-height: 28.96px;
+}
+
+.popularActivity .activities .activity div{
+  display: flex;
+  margin-left: 16px;
+  margin-bottom: 14px;
+  line-height: 14px;
+  font-size: 14px;
+}
+.popularActivity .activities .activity i{
+  color:var(--lightblue);
+}
+.popularActivity .activities .activity .date span, .popularActivity .activities .activity .address span{
+  padding: 0 6px;
+}
+.popularActivity .activities .activity .info span{
+  background-color: var(--lightblue);
+  margin-right: 12px;
+  padding:4px 12px;
+  color:#fff;
+  border-radius: 50px;
+  font-size: 12px;
+}
+
+/* Foods */
+.popularFood{
+  position: relative;
+}
+.popularFood .foods{
+  overflow: hidden;
+}
+.popularFood .foods .slideBtn{
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  padding-left: 15px;
+  padding-top: 11px;
+  z-index: 10;
+  top:53%;
+  border-radius: 100%;
+  border: 1px solid #C4C4C4;
+  background-color: #fff;
+  overflow: auto;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.popularFood .foods .slideBtn:hover{
+  transform: translateY(-2px);
+  color: var(--lightblue);
+  background-color: #eee;
+  cursor: pointer;
+}
+.popularFood .foods .slideLeft{
+  left: -20px;
+}
+.popularFood .foods .slideRight{
+  right: -20px;
+}
+.popularFood h2{
+  margin-bottom: 24px;
+}
+.popularFood .foods{
+  display: flex;
+}
+.popularFood .foods .food{
+  width: 317px;
+  background: #FFFFFF;
+  border: 0.5px solid #C4C4C4;
+  margin-right: 20px;
+  box-shadow: 0px 4px 14px #D7D8D9;
+  border-radius: 4px;
+}
+.popularFood .foods .food img{
+  height: 167px;
+  margin-bottom: 18px;
+  object-fit: cover;
+  object-position: left top;
+}
+.popularFood .foods .food h4{
+  width:317px;
+  font-size: 20px;
+  margin-left: 16px;
+  margin-bottom: 12px;
+  line-height: 28.96px;
+}
+
+.popularFood .food div{
+  display: flex;
+  margin-left: 16px;
+  margin-bottom: 14px;
+  line-height: 14px;
+  font-size: 14px;
+}
+.popularFood .foods .food i{
+  color:var(--lightblue);
+}
+.popularFood .food .date span, .popularFood .food .address span, .popularFood .food .tel span{
+  padding: 0 6px;
+}
+
+/* hotel */
+.hotelContainer{
+  background-color: #F4F7F9;
+  width: 100%;
+}
+.hotel h2{
+  padding-top: 58px;
+}
+.hotel .alert{
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.popularHotel{
+  position: relative;
+  padding-top: 58px;
+}
+
+.popularHotel h2{
+  margin-bottom: 24px;
+}
+.popularHotel .hotels{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.popularHotel .hotels .hotel{
+  width: 317px;
+  background: #FFFFFF;
+  border: 0.5px solid #C4C4C4;
+  margin-right: 20px;
+  margin-bottom: 22px;
+  box-shadow: 0px 4px 14px #D7D8D9;
+  border-radius: 4px;
+}
+.popularHotel .hotels .hotel img{
+  height: 167px;
+  margin-bottom: 18px;
+  object-fit: cover;
+  object-position: left top;
+}
+.popularHotel .hotels .hotel h4{
+  width:317px;
+  font-size: 20px;
+  margin-left: 16px;
+  margin-bottom: 12px;
+  line-height: 28.96px;
+}
+
+.popularHotel .hotel div{
+  display: flex;
+  margin-left: 16px;
+  margin-bottom: 14px;
+  line-height: 14px;
+  font-size: 14px;
+}
+.popularHotel .hotels .hotel i{
+  color:var(--lightblue);
+}
+.popularHotel .hotel .date span, .popularHotel .hotel .address span, .popularHotel .hotel .tel span, .popularHotel .hotel .parkingInfo span{
+  padding: 0 6px;
+}
+.hotelShowmore{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+  padding-bottom: 48px;
+
+  color: var(--lightblue);
+}
+.hotelShowmore .searchBtn{
+  position: relative;
+  background-color: #fff;
+  border: 1px solid var(--lightblue);
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 8px 86px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.hotelShowmore .searchBtn:hover{
+  background-color: var(--lightblue);
+  color: #fff;
+  cursor:pointer;
+}
+/* footBanner */
+.footBanner{
+  width: 100%;
+  height: 381px;
+  background-image: url(../images/index/footBanner.png);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-position: center center;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footBanner p{
+  color: #fff;
+  line-height: 29px;
+}
+
+/* footer */
+.footer{
+  background-color: #3A3A3A;
+  color: #fff;
+  font-size: 16px;
+}
+.footer .line{
+  border: 0.25px solid #C4C4C4;
+}
+.footer .leftPanel{
+  color:#fff;
+
+}
+.footer .leftPanel ul{
+  display: flex;
+
+}
+.footer .leftPanel ul li{
+  margin-right: 24px;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+.footer .leftPanel ul li a{
+  color:#fff;
+  letter-spacing: 0.01em;
+}
+.footer .leftPanel ul li a:hover, .footer  .leftPanel .contactUs:hover{
+  color: var(--lightblue);
+  cursor: pointer;
+}
+
+.footer .leftPanel .contactUs{
+  margin-bottom: 17px;
+  letter-spacing: 0.01em;
+  font-size: 16px;
+}
+.footer .leftPanel .info{
+  margin-bottom: 14px;
+  letter-spacing: 0.01em;
+  font-size: 14px;
+}
+.footer .leftPanel .info span{
+  margin-right: 20px;
+}
+.footer .leftPanel .info span:first-child{
+  text-decoration: underline;
+}
+.footer .leftPanel .info span:first-child:hover{
+  color:var(--lightblue);
+  cursor: pointer;
+}
+.footer .line{
+  margin-bottom: 21px;
+}
+.footer .copyright{
+  display: flex;
+  justify-content: end;
+  padding-bottom: 17px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+.footer .panel{
+  display:flex;
+  justify-content: space-between;
+}
+.footer .rightPanel{
+  margin-top: 41.36px;
+}
+.footer .rightPanel img{
+  margin-bottom: 20px;
+}
+.footer .rightPanel i{
+
+  font-size: 28px;
+}
+.footer .rightPanel .social{
+  display: flex;
+  justify-content: end;
+  padding-bottom: 16px;
+}
+.footer .rightPanel .social i:first-child{
+  padding-right: 36px;
+}
+.footer .rightPanel .social i:hover{
+  color: var(--lightblue);
+  cursor: pointer;
 }
