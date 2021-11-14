@@ -1,0 +1,264 @@
+/* viewBanner */
+.navbarContainer{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+.routeMap{
+  margin-bottom: 33px;
+}
+.routeMap span{
+  margin-right: 12px;
+  font-size: 14px;
+}
+.viewBanner .banner{
+  background-image: url(../images/view/viewBanner.png);
+  height:145px;
+  color:#FFFFFF;
+  margin-bottom: 36px;
+}
+.viewBanner .banner p:first-child{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 58px;
+  letter-spacing: 0.01em;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-bottom: 8px;
+}
+
+.viewBanner .banner p:last-child{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  padding-left: 32px;
+}
+/* viewContent */
+.viewContent{
+  display: flex;
+  justify-content: space-between;
+}
+/* leftPanel */
+.viewContent .leftPanel{
+  width: 265px;
+}
+
+.viewContent .leftPanel p{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.viewContent .leftPanel .line{
+  margin: 36px 0;
+}
+
+.viewContent .leftPanel i{
+  color: var(--lightblue);
+  padding-right: 12px;
+}
+.date label{
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #3A3A3A;
+}
+.date input{
+  width: 227px;
+  height: 36px;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.date tr{
+  height: 56px;
+}
+.category{
+  display: flex;
+  flex-direction: column;
+}
+.category .categoryItem{
+  position: relative;
+  margin: 12px 0px;
+}
+.category .categoryItem input, .category .categoryItem label{
+  margin-right: 16px;
+  cursor: pointer;
+}
+.category .categoryItem input[type=checkbox]:after {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 5;
+  content: "";
+  background-color: #fff;
+  display: inline-block;
+  visibility: visible;
+  padding: 0px 0px;
+  border-radius: 0px;
+  border: 0.5px solid #C4C4C4;
+}
+.category .categoryItem input[type=checkbox]:checked:after {
+  content: "v";
+  color:#FFFFFF;
+  background-color: var(--lightblue);
+  font-size: 12px;
+  text-align:center;
+}
+.searchMoreCategory{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--lightblue);
+  margin: 12px 0px;
+}
+.searchMoreCategory span{
+  margin-right: 8px;
+  cursor: pointer;
+}
+/* rightPanel */
+.viewContent .rightPanel{
+  width: 740px;
+}
+.viewContent .rightPanel .keywordTitle{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.viewContent .rightPanel .keywordTitle span{
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #696969;
+}
+.viewContent .rightPanel .categoryItems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background: #E8F0FE;
+  padding: 16px 23px;
+  border-radius: 4px;
+}
+.viewContent .rightPanel .categoryItems .default, .categoryItems .active{
+  margin-bottom: 8px;
+}
+.viewContent .rightPanel .categoryItems div{
+  border-radius: 50px;
+  margin-right: 8px;
+}
+.viewContent .rightPanel .categoryItems .default{
+  padding: 4px 16px;
+  background-color: #C4C4C4;
+}
+.viewContent .rightPanel .categoryItems .active{
+  background-color: var(--lightblue);
+  color:#fff;
+  padding: 4px 16px;
+  display: flex;
+}
+.viewContent .rightPanel .categoryItems .active .del{
+  font-size: 9px; 
+  line-height: 22px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.viewContent .rightPanel .categoryItems .active .del:hover{
+  color: red;
+  cursor: pointer;
+}
+.viewContent .rightPanel .categoryItems .active::before{
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  font-size: 9px;
+}
+.viewContent .rightPanel .categoryItems{
+  color:#fff;
+  margin-bottom: 36.57px;
+}
+.viewContent .rightPanel .categoryItems .active:hover{
+  border: 0.1px solid var(--lightblue);
+  background-color: #fff;
+  color: #696969;
+  cursor: pointer;
+}
+.viewContent .rightPanel .viewInfos .viewInfo{
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  letter-spacing: 0.01em;
+  margin-bottom: 12px;
+}
+.viewContent .rightPanel .viewInfos .viewInfo .detail{
+  padding-left: 20px;
+}
+.viewContent .rightPanel .viewInfos .viewInfo .detail span{
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #3A3A3A;
+}
+.viewContent .rightPanel .viewInfos .viewInfo i{
+  color: var(--lightblue);
+  margin-right: 16px;
+}
+.viewContent .rightPanel .viewInfos .viewInfo .title{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 45px;
+  color: #3A3A3A;
+}
+.viewContent .rightPanel .viewInfos .viewInfo .title:hover{
+  color: var(--lightblue);
+  cursor: pointer;
+}
+.viewContent .rightPanel .viewInfos .viewInfo img{
+  cursor: pointer;
+}
+.viewContent .rightPanel .viewInfos .viewInfo .description{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.viewContent .rightPanel .viewInfos .viewInfo .date{
+  margin-bottom: 9px;
+}
+
+/* pagination */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--lightblue);
+}
+.pagination div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 32px;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 4px 0px 0px 4px;
+}
+.pagination div:hover{
+  cursor: pointer;
+  background-color: #E5E5E5;
+}
+
+.pagination{
+  margin-bottom: 123px;
+}
