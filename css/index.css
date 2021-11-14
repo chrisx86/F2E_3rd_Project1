@@ -38,6 +38,9 @@
   align-items: center;
   margin-bottom: 16px;
 }
+.bannerContainer .searchForm i:hover{
+  cursor: pointer;
+}
 .bannerContainer .searchForm input{
   font-size: 1.2rem;
   width:534px;
