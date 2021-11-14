@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/view.css">
+  <title>YU DAY</title>
+</head>
+<body>
+  <section class="navbarContainer">
+    <nav class="navbar container">
+      <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+      <div class="menus">
+        <ul>
+          <li><a href="./index.html">首頁</a></li>
+          <li><a href="./view.html">景點</a></li>
+          <li><a href="./activity.html">活動</a></li>
+          <li><a href="./food.html">美食</a></li>
+          <li><a href="./hotel.html" class="active">住宿</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  
+  <section class="viewBanner container">
+    <div class="routeMap">
+      <span class="active">首頁</span>
+      <span>></span>
+      <span>住宿</span>
+    </div>
+    <div class="banner">
+      <p>台灣</p>
+      <p>台灣的地形以山地所佔的面積最大，分布於本島中央偏東，由東向西包括海岸山脈、中央山脈、雪山山脈、玉山山脈和阿里山山脈等五大山脈。</p>
+    </div>
+  </section>
+
+  <section class="viewContent container">
+    <div class="leftPanel">
+      <p class="exploreTitle">選擇一個探索項目</p>
+      <select class="selection">
+        <option>景點</option>
+        <option>活動</option>
+        <option>美食</option>
+        <option selected>住宿</option>
+      </select>
+      <div class="line"></div>
+      <p><i class="fas fa-map-marker-alt"></i><span>選擇地點</span></p>
+      <select class="selection">
+        <option>台中</option>
+        <option>台南</option>
+        <option>高雄</option>
+        <option>墾丁</option>
+      </select>
+      <div class="line"></div>
+      <p><i class="far fa-calendar-minus"></i><span>出發日期</span></p>
+      <div class="date">
+        <table>
+          <tr>
+            <td><label for="dateFrom">From</label></td>
+            <td><input type="date" name="dateFrom" value="2021-11-14"></td>
+          </tr>
+          <tr>
+            <td align="right"><label for="dateTo">To</label></td>
+            <td><input type="date" name="dateTo" value="2021-11-15"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="line"></div>
+      <p><i class="fas fa-hotel"></i><span>住宿分類</span></p>
+      <div class="category">
+        <div class="categoryItem">
+          <input type="checkbox" name="all" id="all" class="v-checkbox"><label for="all">全部</label>
+        </div>
+        <div class="categoryItem">
+          <input type="checkbox" name="nature" id="nature" class="v-checkbox" checked><label for="nature">民宿</label>
+        </div>
+        <div class="categoryItem">
+          <input type="checkbox" name="leisure" id="leisure"><label for="leisure">一般旅館</label>
+        </div>
+        <div class="categoryItem">
+          <input type="checkbox" name="sport" id="sport"><label for="sport">國際觀光旅館</label>
+        </div>
+        <div class="categoryItem">
+          <input type="checkbox" name="hotspring" id="hotspring"><label for="hotspring">四季活動</label>
+        </div>
+      </div>
+      <div class="searchMoreCategory">
+        <span>查看更多分類</span><i class="fas fa-angle-down"></i>
+      </div>
+      <div class="line"></div>
+    </div>
+
+    <div class="rightPanel">
+      <p class="keywordTitle">關鍵字 <span>搜尋結果共 123 筆</span></p>
+      <div class="categoryItems">
+        <div class="default">清除所有</div>
+        <div class="active"><div>台中</div><div class="del">x</div></div>
+        <div class="active"><div>民宿</div><div class="del">x</div></div>
+      </div>
+      <div class="viewInfos">
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+        <div class="viewInfo">
+          <img src="./images/hotel/hotel1.png" alt="view1">
+          <div class="detail">
+            <p class="title">嘉義富野渡假酒店</p>
+            <p class="description">富野集團的品牌精神與風格秉持著「真實自然、人本關懷」，嘉義富野渡假酒店仍承襲此精神，提供在地化的精緻服務與熱情，打造輕鬆舒適的空間，呈現真實感動的...</p>
+            <p class="date"><i class="fas fa-phone-alt"></i><span>886-5-2501999</span></p>
+            <p class="address"><i class="fas fa-map-marker-alt"></i><span>嘉義縣梅山鄉瑞峯村7鄰坔埔48之3號</span></p>
+          </div>
+        </div>
+
+      </div>
+      <div class="pagination">
+        <div><</div>
+        <div>1</div>
+        <div>2</div>
+        <div>...</div>
+        <div>8</div>
+        <div>9</div>
+        <div>></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div class="panel">
+        <div class="leftPanel">
+          <ul>
+            <li><a href="./index.html">首頁</a></li>
+            <li><a href="./view.html">景點</a></li>
+            <li><a href="./activity.html">活動</a></li>
+            <li><a href="./food.html">美食</a></li>
+            <li><a href="./hotel.html">住宿</a></li>
+          </ul>
+          <p class="contactUs">
+            聯絡我們
+          </p>
+          <p class="info">
+            <span>service@yuday.com</span><span>01-234-5678</span>
+          </p>  
+        </div>
+        <div class="rightPanel">
+          <img src="./images/footerlogo.png" alt="logo">
+          <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="copyright">
+        COPYRIGHT © 2021 Chris All rights reserved.
+      </div>
+    </div>
+  </section>
+</body>
+</html>
